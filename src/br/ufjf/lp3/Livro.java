@@ -1,7 +1,7 @@
 package br.ufjf.lp3;
 
 
-public class Livro {
+public class Livro implements NewInterface {
     private String titulo;
     private String autor;
     private Integer ano;
@@ -18,10 +18,12 @@ public class Livro {
         this.preco = preco;
     }
 
+    @Override
     public String getTitulo() {
         return titulo;
     }
 
+    @Override
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -42,10 +44,12 @@ public class Livro {
         this.paginas = paginas;
     }
 
+    @Override
     public Double getPreco() {
         return preco;
     }
 
+    @Override
     public void setPreco(Double preco) {
         this.preco = preco;
     }
