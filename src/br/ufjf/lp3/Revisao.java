@@ -5,8 +5,8 @@ package br.ufjf.lp3;
 public class Revisao {
 
     public static void main(String[] args) {
-        Livro l1 = new Livro("Java como programar", 1967, 50, 127.45F);
-        Livro l2 = new Livro("Java como programar: O retorno", 1972, 56, 73.45F);
+        Livro l1 = new Livro("Java como programar", 1967, 50, 127.45D);
+        Livro l2 = new Livro("Java como programar: O retorno", 1972, 56, 73.45D);
         System.out.println("Livros disponiveis: ");
         System.out.print(l1.getTitulo());
         System.out.println(" (" + l1.getAno() +") ");
