@@ -3,14 +3,15 @@ package br.ufjf.lp3;
 
 public class Livro {
     private String titulo;
+    private String autor;
     private Integer ano;
     private Integer paginas;
-    private Float preco;
+    private Double preco;
 
     public Livro() {
     }
     
-    public Livro(String titulo, Integer ano, Integer paginas, Float preco) {
+    public Livro(String titulo, Integer ano, Integer paginas, Double preco) {
         this.titulo = titulo;
         this.ano = ano;
         this.paginas = paginas;
@@ -41,12 +42,20 @@ public class Livro {
         this.paginas = paginas;
     }
 
-    public Float getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(Float preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
     
         @Override
