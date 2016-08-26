@@ -17,13 +17,16 @@ public class Revisao {
         System.out.println("R$"+l1.getPreco());
         System.out.printf("%s\n (%d) %d R$%.2f \n", l2.getTitulo(),l2.getAno(),l2.getPaginas(),l2.getPreco());
         */
-        List<Livro> livros = new ArrayList<>();
-        livros.add(l1);
-        livros.add(l2);
+        List<NewInterface> produto = new ArrayList<>();
+        produto.add(l1);
+        produto.add(l2);
         
-        for (Livro livro : livros) {
+        for (NewInterface livro : produto) {
             System.out.println(livro);
         }
+        
+        CD cd1 = new CD("Paranoid","Black Sabbath",20.15);
+        System.out.println(cd1);
     }
     
 }
